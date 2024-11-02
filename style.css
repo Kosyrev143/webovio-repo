@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F2F2F2;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer sidebar";
+}
+header{
+    top: 0;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 121px;
+    padding: 24px 164px 211px 164px;
+    background-image: url(assets/header/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-button{
+    background-color: white; 
+    border-radius: 50%;
+    border: none;
+    padding: 0.5em;
+}
+#close-button{
+    background-color: white; 
+    border-radius: 50%;
+    border: none;
+    padding: 0.5em;
+}
+.start-container{
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: flex-start;
+}
+.start-container p{
+    font-size: 14px;
+}
+.start-container h1{
+    font-size: 60px;
+}
+.start-container span{
+    color: yellow;
+    text-decoration:underline;
+    font-size: 16px;
+}
+.strategy-comment-container{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 165px 150px 165px;
+    width: 100%;
+}
+.strategy-container{
+    width: 60%;
+    padding-top: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    text-align: start;
+}
+.strategy-container p{
+    font-size: 14px;
+}
+.strategy-container h1{
+    font-size: 2rem;
+}
+.strategy-container span{
+    color: #D4D6D4;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.comment-container{
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 244px 40px 60px;
+}
+.comment-container p{
+    font-size: 24px;
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    gap: -10px;
+    align-items: center;
+    align-content: center;
+}
+.comment img{
+    height: 100%;
+    border-radius: 50%;
+}
+.comment-content{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+.comment-content h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.comment-content p{
+    font-size: 16px;
+}
+.awesome-lorem-container{
+    display: flex;
+    flex-direction: row;
+    padding: 150px 165px 0;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.awesome-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    text-align: left;
+}
+.lorem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 16px;
+}
+.angel-comment-balenciaga-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-top: 104px;
+}
+.angel-comment-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60%;
+    background-image: url(assets/angel-comment-balenciaga-container/background-angel-comment-balenciaga-container.svg);
+    background-size: 100%;
+    padding-top: 372px;
+    padding-left: 322px;
+    background-repeat: no-repeat;
+}
+.angel-comment-block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+}
+.balenciaga-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+    padding: 80px 133px 138px 56px;
+}
+.balenciaga-container h1{
+    font-size: 2rem;
+}
+.balenciaga-container p{
+    font-size: 16px;
+}
+.balenciaga-container span{
+    color: #D4D6D4;
+    font-size: 16px;
+    text-decoration: underline;
+}
+#threed-model-back {
+    background-image: url('assets/angel-comment-balenciaga-container/background-3d-lina-commen-conteiner.svg');
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-size: 100%;
+    padding-top: 372px;
+    padding-right: 322px;
+    padding-left: 0;
+    background-repeat: no-repeat;
+}
+#lina-comment{
+    
+}
+#orange-circle-back{
+    background-image: url('assets/angel-comment-balenciaga-container/background-eunuce-comment-booking-container.svg');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+}
+
+aside{
+    grid-area: sidebar;
+    display: none;
+    padding: 1.4em;
+}
+.show {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    width: 300px;
+    right: 0;
+    top: 0;
+    align-self: start;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    gap: 113px;
+    padding: 310px 165px 30px;
+    background-image: url(assets/footer/background-footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.phone-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+}
+.phone-container span{
+    color: #B6C197;
+}
+.address-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+}
+.address-container span{
+    color: #B6C197;
+}
+.contacts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 128px;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-item{
+    list-style-type: none;
+}
+.footer-item a{
+    color: #B6C197;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer-item span{
+    color: white;
+    font-size: 16px;
+}
+.footer-item p{
+    color: white;
+    font-size: 24px;
+}
+.soc-net-container{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.footer-logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo-container span{
+    font-size: 14px;
+    color: #B5C096;
+}
+
+@media(max-width:  800px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: fixed;
+        width: 300px;
+        display: none;
+        right: 0;
+    }
+    
+}
