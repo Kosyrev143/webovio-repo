@@ -250,6 +250,10 @@ footer{
 .phone-container span{
     color: #B6C197;
 }
+
+.phone-container p{
+    color: white;
+}
 .address-container{
     display: flex;
     flex-direction: column;
