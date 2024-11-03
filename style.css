@@ -146,6 +146,9 @@ header{
     width: 50%;
     font-size: 16px;
 }
+.lorem-container p{
+    font-size: 25px;
+}
 .angel-comment-balenciaga-container{
     display: flex;
     flex-direction: row;
@@ -161,7 +164,7 @@ header{
     background-image: url(assets/angel-comment-balenciaga-container/background-angel-comment-balenciaga-container.svg);
     background-size: 100%;
     padding-top: 372px;
-    padding-left: 322px;
+    padding-left: 222px;
     background-repeat: no-repeat;
 }
 .angel-comment-block{
@@ -279,6 +282,7 @@ footer{
     color: #B6C197;
     font-size: 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 .footer-item span{
     color: white;
@@ -298,13 +302,61 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .footer-logo-container span{
     font-size: 14px;
     color: #B5C096;
 }
 
-@media(max-width:  800px){
+@media(max-width: 1080px){
+    .comment-container p{
+        font-size: 16px;
+    }
+    .comment img{
+        height: 70px;
+    }
+    .comment-content h3{
+        font-size: 10px;
+    }
+    .comment-content p{
+        font-size: 8px;
+    }
+    .awesome-container{
+        font-size: 25px;
+    }
+    .lorem-container p{
+        font-size: 20px;
+    }
+    .angel-comment-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 70%;
+        background-size: 100%;
+        padding-top: 280px;
+        padding-left: 50px;
+        background-repeat: no-repeat;
+    }
+    #threed-model-back {
+        background-image: url('assets/angel-comment-balenciaga-container/background-3d-lina-commen-conteiner.svg');
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-size: 100%;
+        padding-top: 280px;
+        padding-right: 50px;
+        padding-left: 0;
+        background-repeat: no-repeat;
+    }
+    .balenciaga-container{
+        padding: 2em;
+    }
+    footer{
+        padding: 2em;
+    }
+}
+@media(max-width:  850px){
     body{
         grid-template-columns: 1fr;
     }
@@ -313,6 +365,208 @@ footer{
         width: 300px;
         display: none;
         right: 0;
+    }
+    .header-container #logo{
+        display: none;
+    }
+    header{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .header-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .start-container h1{
+        font-size: 40px;
+    }
+    .comment-container p{
+        font-size: 12px;
+    }
+    .comment img{
+        height: 50px;
+    }
+    .comment-content h3{
+        font-size: 8px;
+    }
+    .comment-content p{
+        font-size: 6px;
+    }
+    .comment-container{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .strategy-comment-container{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .strategy-container p{
+        font-size: 10px;
+    }
+    .strategy-container h1{
+        font-size: 26px;
+    }
+    .awesome-lorem-container{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .awesome-container{
+        font-size: 20px;
+    }
+    .lorem-container p{
+        font-size: 12px;
+    }
+    .angel-comment-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 70%;
+        background-size: 100%;
+        padding-top: 240px;
+        padding-left: 50px;
+        background-repeat: no-repeat;
+    }
+    #threed-model-back {
+        background-image: url('assets/angel-comment-balenciaga-container/background-3d-lina-commen-conteiner.svg');
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-size: 100%;
+        padding-top: 240px;
+        padding-right: 50px;
+        padding-left: 0;
+        background-repeat: no-repeat;
+    }
+    .angel-comment-block p{
+        font-size: 12px;
+    }
+    .balenciaga-container p{
+        font-size: 12px;
+    }
+    footer{
+        gap: 20px;
+    }
+    .contacts-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .list-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-logo-container img{
+        height: 20px;
+    }
+}
+@media(max-width: 650px){
+    .angel-comment-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 60%;
+        background-size: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        background-repeat: no-repeat;
+    }
+    #threed-model-back {
+        background-image: url('assets/angel-comment-balenciaga-container/background-3d-lina-commen-conteiner.svg');
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-size: 100%;
+        padding-top: 140px;
+        padding-right: 40px;
+        padding-left: 0;
+        background-repeat: no-repeat;
+    }
+    .balenciaga-container h1{
+        font-size: 20px;
+    }
+}
+@media(max-width: 460px){
+    .start-container h1{
+        font-size: 20px;
+    }
+    .strategy-comment-container{
+        padding-bottom: 2em;
+    }
+    .strategy-container{
+        padding-top: 2em;
+    }
+    .strategy-container h1{
+        font-size: 20px;
+    }
+    .comment-container{
+        padding-top: 2em;
+    }
+    .comment-container p{
+        font-size: 8px;
+    }
+    .awesome-lorem-container{
+        padding-top: 2em;
+    }
+    .awesome-container{
+        font-size: 14px;
+    }
+    .lorem-container p{
+        font-size: 8px;
+    }
+    .angel-comment-balenciaga-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-top: 2em;
+        
+    }
+    .angel-comment-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100%;
+        background-size: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        background-repeat: no-repeat;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #threed-model-back {
+        background-image: url('assets/angel-comment-balenciaga-container/background-3d-lina-commen-conteiner.svg');
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-size: 100%;
+        padding-top: 140px;
+        padding-right: 40px;
+        padding-left: 0;
+        background-repeat: no-repeat;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .balenciaga-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
     }
     
 }
